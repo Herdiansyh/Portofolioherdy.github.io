@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #045c72;
+  --teks: #ffffff;
+  --body: #e3faf7;
+}
+* {
+  box-sizing: border-box; /* Pastikan semua elemen menghitung padding dan border dalam lebar totalnya */
+}
+
+body,
+html {
+  overflow-x: hidden; /* Menyembunyikan konten yang meluap secara horizontal */
+  width: 100%; /* Pastikan body mengisi lebar layar sepenuhnya */
+}
+
+.navbar {
+  background-color: var(--bg-color) !important;
+  font-family: "montserrat";
+}
+.nav-link:hover {
+  color: var(--teks) !important;
+}
+
+.jumbotron {
+  background-color: var(--body) !important;
+  padding-top: 2rem;
+  font-family: "montserrat";
+}
+.jumbotron img {
+  transition: transform 0.7s ease, background-color 0.5s ease;
+}
+.jumbotron img:hover {
+  transform: scale(1.1);
+  background-color: var(--bg-color);
+  content: url(assets/img/animasi.png);
+}
+#about .container {
+  font-family: "montserrat";
+}
+
+#trip {
+  background-color: var(--body);
+  font-family: "montserrat";
+}
+.mytrip {
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin: 10px;
+}
+.card-title {
+  text-align: center;
+}
+#contact {
+  background-color: var(--body);
+}
+#contact .btn {
+  background-color: var(--bg-color);
+  color: var(--teks);
+}
+footer {
+  background-color: var(--bg-color);
+
+  color: var(--teks);
+  font-weight: bold;
+  font-family: "montserrat";
+  text-align: center;
+}
+footer a {
+  color: var(--teks);
+  margin: 1rem;
+}
